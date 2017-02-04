@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body class="body">
+    <div class="container-content">
+	    <h1 class="start-avital">
+	    	Start the Journey <br/> by <u>Avital</u>
+	    <div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="iamges11 mui-slider-group mui-slider-loop">
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<p>
+							<img src="img/Logins_03.png" data-preview-src="" data-preview-group="1" />
+						</p>
+				        <p class="mui-slider-title">图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作，左右滑动可查看同组(data-preview-group相同的图片为一组)其它图片，点击会关闭预览</p>
+					</div>
+					<div class="mui-slider-item">
+						<p>
+							<img src="img/Logins_03.png" data-preview-src="" data-preview-group="1" />
+						</p>
+				        <p>图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作，左右滑动可查看同组(data-preview-group相同的图片为一组)其它图片，点击会关闭预览</p>
+					</div>
+					<div class="mui-slider-item">
+						<p>
+							<img src="img/Logins_03.png" data-preview-src="" data-preview-group="1" />
+						</p>
+				        <p>图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作，左右滑动可查看同组(data-preview-group相同的图片为一组)其它图片，点击会关闭预览</p>
+					</div>
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<p>
+							<img src="img/Logins_03.png" data-preview-src="" data-preview-group="1" />
+						</p>
+				        <p>图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作，左右滑动可查看同组(data-preview-group相同的图片为一组)其它图片，点击会关闭预览</p>
+					</div>
+				</div>
+				<div class="mui-slider-indicator mui-text-center">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+
+		</div>
+		<a href="avital-email.html"><button type="button" class="mui-btn mui-btn-primary mui-btn-block">LOGIN NOW<span class="mui-icon mui-icon-arrowthinright"></span></button></a>
+	</div>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		var slider = mui("#slider");
+		document.getElementById("switch").addEventListener('toggle',function(e) {
+			if (e.detail.isActive) {
+				slider.slider({
+					interval: 5000
+				});
+			} else {
+				slider.slider({
+					interval: 0
+				});
+			}
+		});
+	</script>
+</body>
+</html>
